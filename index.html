@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      background-color: rgb(179, 233, 143);
+      position: relative;
+      margin: auto;
+      width: 30%;
+      padding: 10px;
+      
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .top-image{
+      position: absolute;
+      right: 800px;
+      bottom: 300px;
+    }
+    .bottom-image{
+      position: absolute;
+      left: 800px;
+      top: 300px;
+    }
+    body{
+      margin: 0;
+      background-color: hsl(185, 75%, 39%);
+      font-family: 'Kumbh Sans';
+      width: 1440px;
+      font-size: 18px;
+    }
+    .box{
+      background-color: aliceblue;
+      margin: 100px 0 100px 500px;
+      height: 500px;
+      width: 30%;
+      position: absolute;
+      border-radius: 50px;
+      text-align: center;
+    }
+    .card-bck{
+      width: 100%;
+      border-radius: 50px 50px 0 0;
+    }
+    .person{
+      position: absolute;
+      left: 172px;
+      top: 140px;
+      border: 5px;
+      border-radius: 50%;
+      border-style: solid;
+      border-color: white;
+      padding : 0;
+    }
+    .text{
+      position: relative;
+      top: 70px
+    }
+
+    h1{
+      font-weight: 700;
+    }
+    hr{
+      margin: 20px 0 20px 0;
+      border-style: solid;
+      border-top: 1px;
+      border-color:hsl(0, 0%, 59%);
+    }
+    table{
+      text-align: center;
+      margin: auto;
+    }
+    td{
+      padding: 20px;
+      text-align: center;
+      margin: 30px;
+    }
+    .head{
+      font-weight: 700;
+      color:  hsl(229, 23%, 23%);
+    }
+    .values{
+      font-weight: 400;
+      color: hsl(227, 10%, 46%)
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div>
+    <img class="top-image" src="images/bg-pattern-top.svg" alt="top-image">
+    <img class="bottom-image" src="images/bg-pattern-bottom.svg" alt="bottom-image">
+  </div>
+
+  <div class="box">
+    <img class="card-bck" src="images/bg-pattern-card.svg" alt="card-background">
+    <img class="person" src="images/image-victor.jpg" alt="person">
+
+    <div class="text">
+      <h1 style="font-size: 18px; color: hsl(229, 23%, 23%);">Victor Crest <span style="font-weight: 400; color: hsl(227, 10%, 46%);">26</span></h1>
+      <h2 style="font-size: 18px; color: hsl(227, 10%, 46%); font-weight: 400;">London</h2>
+      <hr>
+
+      <table>
+        <tbody>
+          <tr class="head">
+            <td>80K</td>
+            <td>803K</td>
+            <td>1.4K</td>
+          </tr>
+
+          <tr class="values">
+            <td>Followers</td>
+            <td>Likes</td>
+            <td>Photos</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </div>
+
+  
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Priyanka</a>.
+  </div>
+</body>
+</html>
